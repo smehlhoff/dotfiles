@@ -21,7 +21,8 @@ sudo dpkg -i ~/Downloads/discord.deb
 sudo apt update
 
 # install packages
-sudo apt install vim keepassx net-tools curl fish alacritty yadm bat git tmux htop fd-find virtualenv python3-pip qpython3-virtualenv thunderbird
+sudo apt install vim keepassx net-tools curl fish alacritty yadm bat git tmux htop fd-find 
+sudo apt install virtualenv python3-pip qpython3-virtualenv thunderbird
 
 # set default shell to fish
 chsh -s /usr/bin/fish
