@@ -60,4 +60,8 @@ yadm clone https://github.com/smehlhoff/dotfiles.git
 # move xorg.conf to default directory
 cp xorg.conf /etc/X11/xorg.conf
 
+# fix dual boot time conflicts
+# https://askubuntu.com/questions/169376/clock-time-is-off-on-dual-boot
+timedatectl set-local-rtc 1
+
 echo "Fresh install complete."
