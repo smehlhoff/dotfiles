@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Fresh install is now starting..."
+
 # remove default kde packages
 sudo apt remove k3b skanlite vlc
 
