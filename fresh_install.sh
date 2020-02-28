@@ -24,7 +24,7 @@ sudo apt update
 
 # install packages
 sudo apt install vim keepassx net-tools curl fish alacritty yadm bat git tmux htop fd-find 
-sudo apt install virtualenv python3-pip qpython3-virtualenv thunderbird ripgrep ranger
+sudo apt install virtualenv python3-pip qpython3-virtualenv thunderbird ranger
 
 # set default shell to fish
 chsh -s /usr/bin/fish
@@ -39,7 +39,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 
 # install exa
-cargo install exa
+cargo install exa ripgrep
 
 # enable firewall
 sudo ufw enable
