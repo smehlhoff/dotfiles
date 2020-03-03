@@ -6,10 +6,11 @@ echo "Fresh install is now starting..."
 sudo apt remove k3b skanlite vlc
 
 # add ppa repositories
-sudo add-apt-repository ppa:kubuntu-ppa/backports
+sudo apt-add-repository ppa:kubuntu-ppa/backports
 sudo apt-add-repository ppa:fish-shell/release-3
-sudo add-apt-repository ppa:mmstick76/alacritty
-sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt-add-repository ppa:mmstick76/alacritty
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-add-repository ppa:graphics-drivers/ppa
 
 # install vscode
 wget -O ~/Downloads/code.deb https://update.code.visualstudio.com/latest/linux-deb-x64/stable
@@ -19,12 +20,18 @@ sudo dpkg -i ~/Downloads/code.deb
 wget -O ~/Downloads/discord.deb https://discordapp.com/api/download?platform=linux&format=deb
 sudo dpkg -i ~/Downloads/discord.deb
 
+# install terraform
+wget -O ~/Downloads/terraform.zip https://releases.hashicorp.com/terraform/0.12.21/terraform_0.12.21_linux_amd64.zip
+unzip ~/Downloads/terraform.zip
+sudo mv ~/Downloads/terraform /usr/local/bin
+
 # update list of packages
 sudo apt update
 
 # install packages
 sudo apt install vim keepassx net-tools curl fish alacritty yadm bat git tmux htop fd-find 
-sudo apt install virtualenv python3-pip qpython3-virtualenv thunderbird ranger
+sudo apt install virtualenv python3-pip qpython3-virtualenv thunderbird ranger putty-tools
+sudo apt install ansible software-properties-common
 
 # set default shell to fish
 chsh -s /usr/bin/fish
@@ -39,7 +46,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 
 # install exa
-cargo install exa ripgrep
+cargo install exa
+
+# install ripgrep
+cargo install ripgrep
 
 # enable firewall
 sudo ufw enable
