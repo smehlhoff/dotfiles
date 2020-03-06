@@ -34,12 +34,19 @@ sudo ./home/steve/Downloads/aws/install
 sudo apt update
 
 # install packages
-sudo apt install vim keepassx net-tools curl fish alacritty yadm bat git tmux htop fd-find 
-sudo apt install virtualenv python3-pip python3-virtualenv thunderbird ranger putty-tools
-sudo apt install ansible software-properties-common
+sudo apt install -y vim keepassx net-tools curl fish alacritty yadm bat git tmux htop fd-find 
+sudo apt install -y virtualenv python3-pip python3-virtualenv thunderbird ranger putty-tools
+sudo apt install -y ansible software-properties-common virtualbox
 
 # fix keyboard issues
-sudo apt install xserver-xorg-input-all
+sudo apt install -y xserver-xorg-input-all
+
+# install docker
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo bash -c 'echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu disco stable" > /etc/apt/sources.list.d/docker-ce.list'
+sudo apt update
+sudo apt install -y docker-ce
+sudo systemctl status docker
 
 # set default shell to fish
 chsh -s /usr/bin/fish
