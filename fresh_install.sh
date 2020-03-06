@@ -25,13 +25,21 @@ wget -O ~/Downloads/terraform.zip https://releases.hashicorp.com/terraform/0.12.
 unzip ~/Downloads/terraform.zip
 sudo mv ~/Downloads/terraform /usr/local/bin
 
+# install aws cli
+wget -O ~/Downloads/aws.zip https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
+unzip ~/Downloads/aws
+sudo ./home/steve/Downloads/aws/install
+
 # update list of packages
 sudo apt update
 
 # install packages
 sudo apt install vim keepassx net-tools curl fish alacritty yadm bat git tmux htop fd-find 
-sudo apt install virtualenv python3-pip qpython3-virtualenv thunderbird ranger putty-tools
+sudo apt install virtualenv python3-pip python3-virtualenv thunderbird ranger putty-tools
 sudo apt install ansible software-properties-common
+
+# fix keyboard issues
+sudo apt install xserver-xorg-input-all
 
 # set default shell to fish
 chsh -s /usr/bin/fish
@@ -45,22 +53,13 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # set rust cargo env
 source $HOME/.cargo/env
 
-# install exa
-cargo install exa
-
-# install ripgrep
-cargo install ripgrep
-
-# enable firewall
-sudo ufw enable
-
-# fix keyboard issues
-sudo apt-get install xserver-xorg-input-all
+# install rust packages
+cargo install exa ripgrep
 
 # install newer versions of packages
 sudo apt upgrade
 
-# clears out the local repository of retrieved packages files
+# clear out local repository of retrieved package files
 sudo apt autoclean
 
 # remove unnecessary dependencies
@@ -76,4 +75,8 @@ cp xorg.conf /etc/X11/xorg.conf
 # https://askubuntu.com/questions/169376/clock-time-is-off-on-dual-boot
 timedatectl set-local-rtc 1
 
+# enable firewall
+sudo ufw enable
+
 echo "Fresh install complete."
+
