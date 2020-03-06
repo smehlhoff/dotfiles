@@ -1,6 +1,8 @@
 set PATH $HOME/.cargo/bin $PATH
 
 alias wx="curl wttr.in"
+alias reddit="xdg-open https://www.reddit.com"
+alias twitch="xdg-open https://www.twitch.tv"
 alias police="xdg-open https://www.broadcastify.com/listen/ctid/225"
 alias police2="xdg-open https://www.broadcastify.com/listen/feed/19186/web"
 alias cheat='echo -n "Search command: " && read command && curl cheat.sh/$command'
