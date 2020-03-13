@@ -90,4 +90,3 @@ timedatectl set-local-rtc 1
 sudo ufw enable
 
 echo "Fresh install complete."
-
