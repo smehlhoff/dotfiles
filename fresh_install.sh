@@ -36,7 +36,7 @@ sudo apt update
 # install packages
 sudo apt install -y vim keepassx net-tools curl fish alacritty yadm bat git tmux htop fd-find 
 sudo apt install -y virtualenv python3-pip python3-virtualenv thunderbird ranger putty-tools
-sudo apt install -y ansible software-properties-common virtualbox
+sudo apt install -y ansible software-properties-common virtualbox default-jre
 
 # fix keyboard issues
 sudo apt install -y xserver-xorg-input-all
