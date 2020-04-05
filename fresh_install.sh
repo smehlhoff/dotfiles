@@ -36,10 +36,14 @@ sudo apt update
 # install packages
 sudo apt install -y vim keepassx net-tools curl fish alacritty yadm bat git tmux htop fd-find 
 sudo apt install -y virtualenv python3-pip python3-virtualenv thunderbird ranger putty-tools
-sudo apt install -y ansible software-properties-common virtualbox default-jre
+sudo apt install -y ansible software-properties-common virtualbox default-jre linux-tools-common
+sudo apt install -y linux-tools-generic
 
 # fix keyboard issues
 sudo apt install -y xserver-xorg-input-all
+
+# required packages for kmon
+sudo apt install -y libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev libxcb1-dev
 
 # install docker
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -65,7 +69,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 
 # install rust packages
-cargo install exa ripgrep
+cargo install exa ripgrep flamegraph kmon
 
 # install newer versions of packages
 sudo apt upgrade
