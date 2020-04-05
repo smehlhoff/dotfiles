@@ -5,5 +5,6 @@
     "files.trimFinalNewlines": true,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "vs-minimal",
-    "workbench.colorTheme": "Base16 Dark Default"
+    "workbench.colorTheme": "Base16 Dark Default",
+    "files.trimTrailingWhitespace": true
 }
