@@ -69,7 +69,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 
 # install rust packages
-cargo install exa ripgrep flamegraph kmon
+cargo install exa ripgrep flamegraph kmon du-dust
 
 # install newer versions of packages
 sudo apt upgrade
