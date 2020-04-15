@@ -6,5 +6,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "vs-minimal",
     "workbench.colorTheme": "Base16 Dark Default",
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100
 }
