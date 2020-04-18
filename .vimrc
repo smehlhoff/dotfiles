@@ -4,6 +4,8 @@ set expandtab           " tabs are spaces
 set number              " show line numbers
 set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
+set textwidth=100       " set max line length
+set wrap                " wrap lines
 
 " vi:syntax=vim
 
