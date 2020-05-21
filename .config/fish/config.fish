@@ -14,3 +14,6 @@ alias ls="exa -la"
 alias cat="bat"
 alias virtualenv="virtualenv -p python3"
 alias hibernate="systemctl suspend"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/steve/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/home/steve/Downloads/google-cloud-sdk/path.fish.inc'; end
