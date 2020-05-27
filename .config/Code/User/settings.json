@@ -8,5 +8,6 @@
     "workbench.colorTheme": "Base16 Dark Default",
     "files.trimTrailingWhitespace": true,
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 100
+    "editor.wordWrapColumn": 100,
+    "rust-analyzer.inlayHints.enable": false
 }
