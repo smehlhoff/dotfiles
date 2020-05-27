@@ -37,7 +37,7 @@ sudo apt update
 sudo apt install -y vim keepassx net-tools curl fish alacritty yadm bat git tmux htop fd-find 
 sudo apt install -y virtualenv python3-pip python3-virtualenv thunderbird ranger putty-tools
 sudo apt install -y ansible software-properties-common virtualbox default-jre linux-tools-common
-sudo apt install -y linux-tools-generic irssi tshark nmap
+sudo apt install -y linux-tools-generic irssi tshark nmap mtr iftop
 
 # fix keyboard issues
 sudo apt install -y xserver-xorg-input-all
