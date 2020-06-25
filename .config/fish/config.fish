@@ -10,7 +10,14 @@ alias cheat='echo -n "Search command: " && read command && curl cheat.sh/$comman
 
 alias reload="exec $SHELL -l"
 alias find="fdfind"
-alias ls="exa -la"
+
+alias l="exa -la"
+alias l="exa"
+alias la="exa --all"
+alias lt="exa --tree"
+alias lg="exa --long --git"
+alias ll="exa --all --long --grid"
+
 alias cat="bat"
 alias virtualenv="virtualenv -p python3"
 alias hibernate="systemctl suspend"
