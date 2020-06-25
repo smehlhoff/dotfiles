@@ -11,7 +11,6 @@ alias cheat='echo -n "Search command: " && read command && curl cheat.sh/$comman
 alias reload="exec $SHELL -l"
 alias find="fdfind"
 
-alias l="exa -la"
 alias l="exa"
 alias la="exa --all"
 alias lt="exa --tree"
