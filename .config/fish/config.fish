@@ -1,7 +1,7 @@
 set PATH $HOME/.cargo/bin $PATH
 
 alias wx="curl wttr.in"
-alias twitch="xdg-open https://www.twitch.tv"
+alias ttv="xdg-open https://www.twitch.tv"
 alias reddit="xdg-open https://www.reddit.com"
 alias hn="xdg-open https://news.ycombinator.com"
 alias chatty="java -jar ~/Downloads/Chatty/Chatty.jar"
