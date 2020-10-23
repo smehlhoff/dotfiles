@@ -1,12 +1,11 @@
 #!/bin/bash
 
-echo "Fresh install is now starting..."
+echo "Fresh install starting..."
 
 # remove default kde packages
-sudo apt remove k3b skanlite vlc
+sudo apt autoremove k3b skanlite vlc snapd --purge
 
 # add ppa repositories
-sudo apt-add-repository ppa:kubuntu-ppa/backports
 sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt-add-repository ppa:mmstick76/alacritty
 sudo apt-add-repository ppa:ansible/ansible
@@ -21,7 +20,7 @@ wget -O ~/Downloads/discord.deb https://discordapp.com/api/download?platform=lin
 sudo dpkg -i ~/Downloads/discord.deb
 
 # install terraform
-wget -O ~/Downloads/terraform.zip https://releases.hashicorp.com/terraform/0.12.21/terraform_0.12.21_linux_amd64.zip
+wget -O ~/Downloads/terraform.zip https://releases.hashicorp.com/terraform/0.13.5/terraform_0.13.5_linux_amd64.zip
 unzip ~/Downloads/terraform.zip
 sudo mv ~/Downloads/terraform /usr/local/bin
 
@@ -34,7 +33,7 @@ sudo ./home/steve/Downloads/aws/install
 sudo apt update
 
 # install packages
-sudo apt install -y vim keepassx net-tools curl fish alacritty yadm bat git tmux htop fd-find 
+sudo apt install -y vim keepassx net-tools curl fish alacritty yadm git tmux htop
 sudo apt install -y virtualenv python3-pip python3-virtualenv thunderbird ranger putty-tools
 sudo apt install -y ansible software-properties-common virtualbox default-jre linux-tools-common
 sudo apt install -y linux-tools-generic irssi tshark nmap mtr iftop
@@ -69,12 +68,12 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 
 # install rust packages
-cargo install exa ripgrep flamegraph kmon du-dust
+cargo install exa ripgrep du-dust bat fd-find cargo-update
 
 # install newer versions of packages
 sudo apt upgrade
 
-# clear out local repository of retrieved package files
+# clean local repository of retrieved package files
 sudo apt autoclean
 
 # remove unnecessary dependencies
@@ -93,4 +92,4 @@ timedatectl set-local-rtc 1
 # enable firewall
 sudo ufw enable
 
-echo "Fresh install complete."
+echo "Fresh install complete..."
