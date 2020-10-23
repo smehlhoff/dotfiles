@@ -29,7 +29,7 @@ wget -O ~/Downloads/aws.zip https://awscli.amazonaws.com/awscli-exe-linux-x86_64
 unzip ~/Downloads/aws
 sudo ./home/steve/Downloads/aws/install
 
-# update list of packages
+# update packages
 sudo apt update
 
 # install packages
@@ -40,9 +40,6 @@ sudo apt install -y linux-tools-generic irssi tshark nmap mtr iftop
 
 # fix keyboard issues
 sudo apt install -y xserver-xorg-input-all
-
-# required packages for kmon
-sudo apt install -y libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev libxcb1-dev
 
 # install docker
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
