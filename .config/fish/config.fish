@@ -5,7 +5,7 @@ alias ttv="xdg-open https://www.twitch.tv"
 alias reddit="xdg-open https://www.reddit.com"
 alias hn="xdg-open https://news.ycombinator.com"
 alias chatty="java -jar ~/Downloads/Chatty/Chatty.jar"
-alias radar="xdg-open 'https://www.aviationweather.gov/radar/site?product=NCR&id=MUX'"
+alias radar="xdg-open 'https://radar.weather.gov/'"
 
 alias cheat='echo -n "Search command: " && read command && curl cheat.sh/$command'
 
