@@ -9,5 +9,8 @@
     "files.trimTrailingWhitespace": true,
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 100,
-    "rust-analyzer.inlayHints.enable": false
+    "rust-analyzer.inlayHints.enable": false,
+    "python.formatting.autopep8Args": [
+        "[\"--max-line-length=100\" ]"
+    ]
 }
