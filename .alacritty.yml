@@ -1,7 +1,7 @@
 window:
   dimensions:
-    columns: 125
-    lines: 40
+    columns: 96
+    lines: 24
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
