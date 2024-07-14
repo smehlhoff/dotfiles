@@ -11,9 +11,8 @@
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.renderColons": false,
     "rust-analyzer.inlayHints.typeHints.enable": false,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "workbench.colorTheme": "Base16 Dark Default",
     "workbench.iconTheme": "vs-minimal",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
 }
