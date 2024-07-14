@@ -1,16 +1,19 @@
 {
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "editor.fontFamily": "Fira Code",
     "editor.fontSize": 18,
-    "files.trimFinalNewlines": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.iconTheme": "vs-minimal",
-    "workbench.colorTheme": "Base16 Dark Default",
-    "files.trimTrailingWhitespace": true,
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 100,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.closingBraceHints.enable": false,
     "rust-analyzer.inlayHints.enable": false,
-    "python.formatting.autopep8Args": [
-        "[\"--max-line-length=100\" ]"
-    ]
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.renderColons": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Base16 Dark Default",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.startupEditor": "newUntitledFile"
 }
